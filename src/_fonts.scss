@@ -5,29 +5,15 @@
 }
 
 // Exports
-.soda-font-giant {
-	@include soda-font-size(50px);
-	font-weight: bold;
+@for $size from 1 through 3 {
+	.soda-font-#{$size * 5} {
+		@include soda-font-size($size * 5px);
+	}
 }
 
-.soda-font-large {
-	@include soda-font-size(35px);
-	font-weight: bold;
-}
-
-.soda-font-big {
-	@include soda-font-size(25px);
-	font-weight: bold;
-}
-
-.soda-font-medium {
-	@include soda-font-size(15px);
-}
-
-.soda-font-small {
-	@include soda-font-size(10px);
-}
-
-.soda-font-tiny {
-	@include soda-font-size(5px);
+@for $size from 4 through 10 {
+	.soda-font-#{$size * 5} {
+		@include soda-font-size($size * 5px);
+		font-weight: bold;
+	}
 }
