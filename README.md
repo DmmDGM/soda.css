@@ -25,6 +25,11 @@ Soda.css is a simple CSS default styling template without the complexity or bloa
 > [!TIP]
 > I guess just use the pre-releases?
 
+## Documentation
+
+> [!NOTE]
+> Also coming soon
+
 ## CSS vs SCSS
 
 Some front-end frameworks do not allow you to use both CSS and SCSS in your projects. If you prefer SCSS, you can use the SCSS option to avoid the preprocessor complaining.
