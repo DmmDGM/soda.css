@@ -1,0 +1,33 @@
+// Mixins
+@mixin soda-font-size($size) {
+	font-size: $size;
+	line-height: $size + 5px;
+}
+
+// Exports
+.soda-font-giant {
+	@include soda-font-size(50px);
+	font-weight: bold;
+}
+
+.soda-font-large {
+	@include soda-font-size(35px);
+	font-weight: bold;
+}
+
+.soda-font-big {
+	@include soda-font-size(25px);
+	font-weight: bold;
+}
+
+.soda-font-medium {
+	@include soda-font-size(15px);
+}
+
+.soda-font-small {
+	@include soda-font-size(10px);
+}
+
+.soda-font-tiny {
+	@include soda-font-size(5px);
+}

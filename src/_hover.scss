@@ -1,0 +1,32 @@
+// Exports
+.soda-hover {
+	&-overline,
+	&-underline {
+		position: relative;
+	}
+
+	&-overline::before {
+		top: -5px;
+	}
+	
+	&-underline::after {
+		bottom: -5px;
+	}
+	
+	&-overline::before,
+	&-underline::after {
+		background-color: rgb(var(--soda-color-white));
+		content: "";
+		height: 3px;
+		left: 0%;
+		position: absolute;
+		transform: scaleX(0);
+		transition: transform 0.2s ease;
+		width: 100%;
+	}
+
+	&-overline:hover::before,
+	&-underline:hover::after {
+		transform: scaleX(0.25);
+	}
+}
