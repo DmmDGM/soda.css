@@ -1,6 +1,13 @@
-v1.0-pre.1 | May 26th, 2024
+v1.0.0 | June 8th, 2024
+- Major rewrite
+- Added Soda / Lemon.js
+- Added Soda / Raspberry.js
+- Added Soda / Corn.js
+- Added Soda / Grape.css
+
+v1.beta-pre.1 | May 26th, 2024
 - Added more flex classes
 - Modified fonts classes
 
-v1.0-pre.0 | May 26th, 2024
+v1.beta-pre.0 | May 26th, 2024
 - Added basic features
