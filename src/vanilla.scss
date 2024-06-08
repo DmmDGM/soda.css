@@ -1,0 +1,28 @@
+// Soda - Vanilla @ DmmD GM
+
+// Defines defaults
+* {
+	background: none; 
+	border: none;
+	color: rgb(var(--soda-rgb-black));
+	font: normal normal normal 15px / 20px sans-serif;
+	list-style: none;
+	margin: 0px;
+	outline: none;
+	padding: 0px;
+	scrollbar-color: rgb(var(--soda-rgb-black)) rgb(var(--soda-rgb-white));
+	scrollbar-gutter: stable both-edges;
+	scrollbar-width: thin;
+	text-decoration: none;
+}
+
+html {
+	height: 100vh;
+	width: 100%;
+}
+
+body {
+	background-color: rgb(var(--soda-rgb-white));
+	height: 100%;
+	width: 100%;
+}
