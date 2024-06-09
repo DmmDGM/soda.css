@@ -2,7 +2,7 @@
 
 ## Description
 
-"Hai~ Dis is soda.css! I made it myself! :3"
+"Hai~ Dis is Soda! I made it myself! :3"
 
 Soda is a simple HTML development kit with random (but hopefully helpful) utility tools and features.
 
