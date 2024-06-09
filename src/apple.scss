@@ -26,7 +26,7 @@
 		width: 100%;
 	}
 
-	&-background:hover {
+	&-background:hover, &-background:active {
 		background-color: rgba(var(--soda-rgb-black), 0.5);
 		transition: background 0.2s ease;
 	}
