@@ -1,0 +1,59 @@
+// Soda - Apple @ DmmD GM
+
+// Defines fonts
+.soda-font {
+	@for $size from 1 through 20 {
+		&-#{$size * 5} {
+			font-size: #{$size * 5}px;
+			@if $size > 3 {
+				font-weight: bold;
+			}
+			line-height: #{$size * 5 + 5}px;
+		}
+	}
+}
+
+// Defines hover effects
+.soda-hover {
+	@mixin line {
+		background-color: rgb(var(--soda-rgb-black));
+		content: "";
+		height: 3px;
+		left: 0%;
+		position: absolute;
+		transform: scaleX(0);
+		transition: transform 0.2s ease;
+		width: 100%;
+	}
+
+	&-background:hover {
+		background-color: rgba(var(--soda-rgb-black), 0.5);
+		transition: background 0.2s ease;
+	}
+
+	&-overline {
+		position: relative;
+
+		&:hover::before {
+			transform: scaleX(0.25);
+		}
+
+		&::before {
+			@include line;
+			top: -5px;
+		}
+	}
+
+	&-underline {
+		position: relative;
+
+		&:hover::after {
+			transform: scaleX(0.25);
+		}
+
+		&::after {
+			@include line;
+			bottom: -5px;
+		}
+	}
+}
