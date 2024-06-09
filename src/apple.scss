@@ -15,7 +15,7 @@
 
 // Defines hover effects
 .soda-hover {
-	@mixin line {
+	@mixin soda-hover-line {
 		background-color: rgb(var(--soda-rgb-black));
 		content: "";
 		height: 3px;
@@ -28,10 +28,12 @@
 
 	&-background:hover, &-background:focus-visible {
 		background-color: rgba(var(--soda-rgb-black), 0.5);
+		cursor: pointer;
 		transition: background 0.2s ease;
 	}
 
 	&-overline {
+		cursor: pointer;
 		position: relative;
 
 		&:hover::before, &:focus-visible::before {
@@ -39,12 +41,13 @@
 		}
 
 		&::before {
-			@include line;
+			@include soda-hover-line;
 			top: -5px;
 		}
 	}
 
 	&-underline {
+		cursor: pointer;
 		position: relative;
 
 		&:hover::after, &:focus-visible::after {
@@ -52,7 +55,7 @@
 		}
 
 		&::after {
-			@include line;
+			@include soda-hover-line;
 			bottom: -5px;
 		}
 	}

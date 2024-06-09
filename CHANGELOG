@@ -1,5 +1,9 @@
 v1.0.3 |
-- Made .soda-hover work with :focus-visible
+- Soda
+	- Updated changelog format
+- Soda / Apple.css
+	- Added focus-visible to .soda-hover
+	- Added pointer cursor to .soda-hover
 
 v1.0.2 | June 9th, 2024
 - Added Soda / Apple.css
