@@ -4,6 +4,7 @@ v1.0.3 |
 - Soda / Apple.css
 	- Added focus-visible to .soda-hover
 	- Added pointer cursor to .soda-hover
+	- Fixed .soda-hover-background not working properly in reverse
 
 v1.0.2 | June 9th, 2024
 - Added Soda / Apple.css

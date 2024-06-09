@@ -26,10 +26,13 @@
 		width: 100%;
 	}
 
-	&-background:hover, &-background:focus-visible {
-		background-color: rgba(var(--soda-rgb-black), 0.5);
+	&-background {
 		cursor: pointer;
 		transition: background 0.2s ease;
+
+		&:hover, &:focus-visible {
+			background-color: rgba(var(--soda-rgb-black), 0.5);
+		}
 	}
 
 	&-overline {
