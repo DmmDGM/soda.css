@@ -1,5 +1,5 @@
 v1.0.3 |
-- Made .soda-hover-background work with :active
+- Made .soda-hover work with :focus-visible
 
 v1.0.2 | June 9th, 2024
 - Added Soda / Apple.css

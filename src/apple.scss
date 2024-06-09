@@ -26,7 +26,7 @@
 		width: 100%;
 	}
 
-	&-background:hover, &-background:active {
+	&-background:hover, &-background:focus-visible {
 		background-color: rgba(var(--soda-rgb-black), 0.5);
 		transition: background 0.2s ease;
 	}
@@ -34,7 +34,7 @@
 	&-overline {
 		position: relative;
 
-		&:hover::before {
+		&:hover::before, &:focus-visible::before {
 			transform: scaleX(0.25);
 		}
 
@@ -47,7 +47,7 @@
 	&-underline {
 		position: relative;
 
-		&:hover::after {
+		&:hover::after, &:focus-visible::after {
 			transform: scaleX(0.25);
 		}
 
