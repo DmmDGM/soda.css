@@ -1,10 +1,18 @@
 v1.0.3 |
 - Soda
+	- Added demo.html
+	- Added watch.sh
 	- Updated changelog format
 - Soda / Apple.css
-	- Added focus-visible to .soda-hover
-	- Added pointer cursor to .soda-hover
-	- Fixed .soda-hover-background not working properly in reverse
+	- Renamed .soda-hover-underline to .soda-underline
+	- Merged with cherry.scss
+	- Removed .soda-font-*
+	- Removed .soda-hover-overline
+- Soda / Cherry.css
+	- Added Soda / Cherry.css
+- Soda / Vanilla.css
+	- Added dark theme
+	- Swapped scrollbar gutter colors
 
 v1.0.2 | June 9th, 2024
 - Added Soda / Apple.css

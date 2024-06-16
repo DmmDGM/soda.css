@@ -1,0 +1,87 @@
+// Soda - Cherry @ DmmD GM
+
+// Defines templates
+.soda-button {
+	background-color: rgba(var(--soda-rgb-light-gray), 0.25);
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 5px 10px;
+	transition: background 0.2s ease;
+	
+	&:focus-visible, &:hover {
+		background-color: rgba(var(--soda-rgb-light-gray), 0.5);
+	}
+}
+
+.soda-input {
+	background-color: rgba(var(--soda-rgb-light-gray), 0.25);
+	border-radius: 5px;
+	padding: 5px 10px;
+	transition: background 0.2s ease;
+
+	&:focus-visible, &:hover {
+		background-color: rgb(var(--soda-rgb-light-gray), 0.5);
+	}
+}
+
+.soda-link {
+	color: rgb(var(--soda-rgb-sky-blue));
+
+	&:focus-visible, &:hover {
+		color: rgb(var(--soda-rgb-dark-sky-blue));
+	}
+}
+
+.soda-underline {
+	cursor: pointer;
+	position: relative;
+
+	&::after {
+		background-color: rgb(var(--soda-rgb-black));
+		bottom: -5px;
+		content: "";
+		height: 3px;
+		left: 0%;
+		position: absolute;
+		transform: scaleX(0);
+		transition: transform 0.2s ease;
+		width: 100%;
+	}
+
+	&:focus-visible::after, &:hover::after {
+		transform: scaleX(0.25);
+	}
+}
+
+// Defines templates (dark)
+html[data-soda-theme-dark] {
+	.soda-button {
+		background-color: rgba(var(--soda-rgb-dark-gray), 0.25);
+
+		&:focus-visible, &:hover {
+			background-color: rgba(var(--soda-rgb-dark-gray), 0.5);
+		}
+	}
+
+	.soda-input {
+		background-color: rgba(var(--soda-rgb-dark-gray), 0.25);
+	
+		&:focus-visible, &:hover {
+			background-color: rgb(var(--soda-rgb-dark-gray), 0.5);
+		}
+	}
+
+	.soda-link {
+		color: rgb(var(--soda-rgb-sky-blue));
+
+		&:focus-visible, &:hover {
+			color: rgb(var(--soda-rgb-dark-sky-blue));
+		}
+	}
+
+	.soda-underline {
+		&::after {
+			background-color: rgb(var(--soda-rgb-white));
+		}
+	}
+}

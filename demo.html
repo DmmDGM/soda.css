@@ -1,0 +1,84 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en" data-soda-theme-dark>
+	<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Soda - Demostration</title>
+		<link rel="stylesheet" href="out/grape.css">
+		<link rel="stylesheet" href="out/vanilla.css">
+		<link rel="stylesheet" href="out/cherry.css">
+		<style>
+			/* Splash */
+			#splash {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 250px 5vw;
+				width: calc(100% - 10vw);
+			}
+
+			#splash h1 {
+				font-size: 50px;
+				font-weight: bold;
+				line-height: 55px;
+			}
+
+			@media screen and (max-width: 750px) {
+				#splash h1 {
+					font-size: 30px;
+					line-height: 35px;
+				}
+			}
+
+			/* Theme */
+			#theme {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				gap: 25px 0px;
+				justify-content: center;
+				padding: 200px 5vw;
+				width: calc(100% - 10vw);
+			}
+
+			#theme h2 {
+				font-size: 25px;
+				font-weight: bold;
+				line-height: 30px;
+			}
+
+			#theme-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 25px 25px;
+			}
+		</style>
+	</head>
+
+	<!-- Body -->
+	<body>
+		<!-- Splash -->
+		<div id="splash">
+			<h1>Soda</h1>
+			<p>"HTML Development in an Aluminum Can"</p>
+		</div>
+
+		<!-- Themes -->
+		<div id="theme">
+			<h2>Themes</h2>
+			<div id="theme-list">
+				<button class="soda-button" id="theme-light">Light</button>
+				<button class="soda-button" id="theme-dark">Dark</button>
+			</div>
+
+			demo page eventually
+		</div>
+		
+		<!-- Script -->
+		<script>
+		</script>
+	</body>
+</html>

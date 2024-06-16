@@ -24,9 +24,9 @@
 	@include define("green", #4FEF4F);
 	@include define("dark-green", #2FDF2F);
 
-	@include define("light-aqua", #6FFFFF);
-	@include define("aqua", #4FEFEF);
-	@include define("dark-aqua", #2FDFDF);
+	@include define("light-cyan", #6FFFFF);
+	@include define("cyan", #4FEFEF);
+	@include define("dark-cyan", #2FDFDF);
 
 	@include define("light-sky-blue", #6FAFFF);
 	@include define("sky-blue", #4F8FEF);
@@ -63,7 +63,7 @@
 
 	// Monochrome
 	@include define("white", #EEEEEE);
-	@include define("light-white", #DDDDDD);
+	@include define("dark-white", #DDDDDD);
 
 	@include define("light-gray", #8F8F8F);
 	@include define("gray", #6F6F6F);
