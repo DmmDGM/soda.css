@@ -1,3 +1,11 @@
+v1.0.4 | June 16th, 2024
+- Soda
+	- Updated compile.sh
+- Soda / Corn.js
+	- Removed Soda / Corn.js
+- Soda / Lemon.js
+	- Removed Soda / Lemon.js
+
 v1.0.3 | June 16th, 2024
 - Soda
 	- Added demo.html
