@@ -55,6 +55,23 @@
 
 *:has(> .soda-droplist) {
 	position: relative;
+
+	&::after {
+		content: "▴";
+		display: inline-block;
+		transform: rotate(90deg);
+		transition: transform 0.2s ease;
+	}
+
+	&:focus-within {
+		&::after {
+			transform: rotate(180deg);
+		}
+
+		> .soda-droplist {
+			display: flex;
+		}
+	}
 	
 	> .soda-droplist {
 		display: none;
@@ -87,12 +104,6 @@
 				top: 0%;
 				transform: translateX(0%);
 			}
-		}
-	}
-
-	&:focus-within {
-		> .soda-droplist {
-			display: flex;
 		}
 	}
 }
