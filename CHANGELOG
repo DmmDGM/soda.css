@@ -1,6 +1,7 @@
 v1.0.4 | June 21st, 2024
 - Soda
 	- Updated compile.sh
+	- Updated README.md
 	- Removed demo.html
 - Soda / Cherry.css
 	- Added .soda-droplist
