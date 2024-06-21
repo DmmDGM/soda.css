@@ -1,6 +1,7 @@
 v1.0.4 | 
 - Soda
 	- Updated compile.sh
+	- Removed demo.html
 - Soda / Cherry.css
 	- Added .soda-droplist
 	- Switched to --soda-theme
