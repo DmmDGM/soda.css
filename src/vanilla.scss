@@ -1,16 +1,32 @@
 // Soda - Vanilla @ DmmD GM
 
+// Defines theme (light)
+:root {
+	--soda-theme-foreground: var(--soda-rgb-black);
+	--soda-theme-background: var(--soda-rgb-white);
+	--soda-theme-accent: var(--soda-rgb-sky-blue);
+	--soda-theme-highlight: var(--soda-rgb-light-gray);
+}
+
+// Defines theme (dark)
+html[data-soda-theme-dark]:root {
+	--soda-theme-foreground: var(--soda-rgb-white);
+	--soda-theme-background: var(--soda-rgb-black);
+	--soda-theme-accent: var(--soda-rgb-sky-blue);
+	--soda-theme-highlight: var(--soda-rgb-dark-gray);
+}
+
 // Defines defaults
 * {
 	background: none; 
 	border: none;
-	color: rgb(var(--soda-rgb-black));
+	color: rgb(var(--soda-theme-foreground));
 	font: normal normal normal 15px / 20px sans-serif;
 	list-style: none;
 	margin: 0px;
 	outline: none;
 	padding: 0px;
-	scrollbar-color: rgb(var(--soda-rgb-white)) rgb(var(--soda-rgb-black));
+	scrollbar-color: rgb(var(--soda-theme-background)) rgb(var(--soda-theme-foreground));
 	scrollbar-gutter: stable both-edges;
 	scrollbar-width: thin;
 	text-decoration: none;
@@ -22,19 +38,7 @@ html {
 }
 
 body {
-	background-color: rgb(var(--soda-rgb-white));
+	background-color: rgb(var(--soda-theme-background));
 	height: 100%;
 	width: 100%;
-}
-
-// Defines defaults (dark)
-html[data-soda-theme-dark] {
-	* {
-		color: rgb(var(--soda-rgb-white));
-		scrollbar-color: rgb(var(--soda-rgb-black)) rgb(var(--soda-rgb-white));
-	}
-	
-	body {
-		background-color: rgb(var(--soda-rgb-black));
-	}
 }

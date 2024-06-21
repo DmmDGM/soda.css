@@ -1,10 +1,17 @@
-v1.0.4 | June 16th, 2024
+v1.0.4 | 
 - Soda
 	- Updated compile.sh
+- Soda / Cherry.css
+	- Added .soda-droplist
+	- Switched to --soda-theme
 - Soda / Corn.js
 	- Removed Soda / Corn.js
+- SOda / Grape.css
+	- Added mint-green, mint-blue, and cherry-blossom
 - Soda / Lemon.js
 	- Removed Soda / Lemon.js
+- Soda / Vanilla.css
+	- Added --soda-theme variable
 
 v1.0.3 | June 16th, 2024
 - Soda

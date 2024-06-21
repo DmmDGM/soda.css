@@ -2,33 +2,33 @@
 
 // Defines templates
 .soda-button {
-	background-color: rgba(var(--soda-rgb-light-gray), 0.25);
+	background-color: rgba(var(--soda-theme-highlight), 0.25);
 	border-radius: 5px;
 	cursor: pointer;
 	padding: 5px 10px;
 	transition: background 0.2s ease;
 	
 	&:focus-visible, &:hover {
-		background-color: rgba(var(--soda-rgb-light-gray), 0.5);
+		background-color: rgba(var(--soda-theme-highlight), 0.5);
 	}
 }
 
 .soda-input {
-	background-color: rgba(var(--soda-rgb-light-gray), 0.25);
+	background-color: rgba(var(--soda-theme-highlight), 0.25);
 	border-radius: 5px;
 	padding: 5px 10px;
 	transition: background 0.2s ease;
 
 	&:focus-visible, &:hover {
-		background-color: rgb(var(--soda-rgb-light-gray), 0.5);
+		background-color: rgb(var(--soda-theme-highlight), 0.5);
 	}
 }
 
 .soda-link {
-	color: rgb(var(--soda-rgb-sky-blue));
+	color: rgba(var(--soda-theme-accent), 0.75);
 
 	&:focus-visible, &:hover {
-		color: rgb(var(--soda-rgb-dark-sky-blue));
+		color: rgb(var(--soda-theme-accent));
 	}
 }
 
@@ -37,7 +37,7 @@
 	position: relative;
 
 	&::after {
-		background-color: rgb(var(--soda-rgb-black));
+		background-color: rgb(var(--soda-theme-foreground));
 		bottom: -5px;
 		content: "";
 		height: 3px;
@@ -53,35 +53,46 @@
 	}
 }
 
-// Defines templates (dark)
-html[data-soda-theme-dark] {
-	.soda-button {
-		background-color: rgba(var(--soda-rgb-dark-gray), 0.25);
-
-		&:focus-visible, &:hover {
-			background-color: rgba(var(--soda-rgb-dark-gray), 0.5);
-		}
-	}
-
-	.soda-input {
-		background-color: rgba(var(--soda-rgb-dark-gray), 0.25);
+*:has(> .soda-droplist) {
+	position: relative;
 	
-		&:focus-visible, &:hover {
-			background-color: rgb(var(--soda-rgb-dark-gray), 0.5);
+	> .soda-droplist {
+		display: none;
+		flex-direction: column;
+		left: 50%;
+		position: absolute;
+		top: 100%;
+		transform: translateX(-50%);
+		width: max-content;
+
+		> * {
+			@extend .soda-button;
+			border-radius: 0px;
+			position: relative;
+
+			&:first-child {
+				border-radius: 5px 5px 0px 0px;
+			}
+
+			&:last-child {
+				border-radius: 0px 0px 5px 5px;
+			}
+
+			&:only-child {
+				border-radius: 5px;
+			}
+
+			.soda-droplist {
+				left: 100%;
+				top: 0%;
+				transform: translateX(0%);
+			}
 		}
 	}
 
-	.soda-link {
-		color: rgb(var(--soda-rgb-sky-blue));
-
-		&:focus-visible, &:hover {
-			color: rgb(var(--soda-rgb-dark-sky-blue));
-		}
-	}
-
-	.soda-underline {
-		&::after {
-			background-color: rgb(var(--soda-rgb-white));
+	&:focus-within {
+		> .soda-droplist {
+			display: flex;
 		}
 	}
 }

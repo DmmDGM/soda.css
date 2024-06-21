@@ -53,13 +53,25 @@
 	@include define("dark-brown", #6F2F1F);
 
 	// Polychrome (Extra)
+	@include define("light-peach", #FFBF8F);
+	@include define("peach", #EFAF6F);
+	@include define("dark-peach", #DF9F4F);
+
+	@include define("light-mint-green", #BFEFCF);
+	@include define("mint-green", #AFEFBF);
+	@include define("dark-mint-green", #9FEFAF);
+
 	@include define("light-forest-green", #3FAF3F);
 	@include define("forest-green", #2F8F2F);
 	@include define("dark-forest-green", #1F4F1F);
 
-	@include define("light-peach", #FFBF8F);
-	@include define("peach", #EFAF6F);
-	@include define("dark-peach", #DF9F4F);
+	@include define("light-mint-blue", #AFFFFF);
+	@include define("mint-blue", #8FEFEF);
+	@include define("dark-mint-blue", #6FDFDF);
+
+	@include define("light-cherry-blossom", #FFCFDF);
+	@include define("cherry-blossom", #EFBFCF);
+	@include define("dark-cherry-blossom", #DFAFBF);
 
 	// Monochrome
 	@include define("white", #EEEEEE);
