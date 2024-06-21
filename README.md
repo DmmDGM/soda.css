@@ -1,22 +1,11 @@
 # Soda
 
-## Description
-
-"Hai~ Dis is Soda! I made it myself! :3"
-
-Soda is a simple HTML development kit with random (but hopefully helpful) utility tools and features.
+"Soda - HTML Development in an Aluminum Can"
 
 ## Installation
 
-### CDN
-
 > [!NOTE]
 > Coming soon
-
-### Download
-
-> [!NOTE]
-> Coming soon too?
 
 ## Documentation
 
@@ -25,4 +14,4 @@ Soda is a simple HTML development kit with random (but hopefully helpful) utilit
 
 ---
 
-###### Last updated: June 8th, 2024
+###### Last updated: June 21st, 2024
