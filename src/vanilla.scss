@@ -26,7 +26,7 @@ html[data-soda-theme-dark]:root {
 	margin: 0px;
 	outline: none;
 	padding: 0px;
-	scrollbar-color: rgb(var(--soda-theme-background)) rgb(var(--soda-theme-foreground));
+	scrollbar-color: rgb(var(--soda-theme-foreground)) rgb(var(--soda-theme-background));
 	scrollbar-gutter: stable both-edges;
 	scrollbar-width: thin;
 	text-decoration: none;
