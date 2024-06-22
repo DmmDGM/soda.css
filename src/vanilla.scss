@@ -42,3 +42,16 @@ body {
 	height: 100%;
 	width: 100%;
 }
+
+b {
+	font-size: bold;
+}
+
+hr {
+	background-color: rgb(var(--soda-theme-foreground));
+	height: 1px;
+}
+
+i {
+	font-style: italic
+}

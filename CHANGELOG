@@ -1,3 +1,7 @@
+v1.0.5 |
+- Soda / Vanilla.css
+	- Added b, hr, and i default styling
+
 v1.0.4 | June 21st, 2024
 - Soda
 	- Updated compile.sh
