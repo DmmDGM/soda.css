@@ -13,6 +13,42 @@
 	}
 }
 
+.soda-button-cluster {
+	display: flex;
+
+	> * {
+		@extend .soda-button;
+		border-radius: 0px;
+
+		&:only-child {
+			border-radius: 5px;
+		}
+
+		&:first-child {
+			border-radius: 5px 0px 0px 5px;
+		}
+
+		&:last-child {
+			border-radius: 0px 5px 5px 0px;
+		}
+	}
+}
+
+.soda-button-list {
+	@extend .soda-button-cluster;
+	flex-direction: column;
+
+	> * {
+		&:first-child {
+			border-radius: 5px 5px 0px 0px;
+		}
+
+		&:last-child {
+			border-radius: 0px 0px 5px 5px;
+		}
+	}
+}
+
 .soda-input {
 	background-color: rgba(var(--soda-theme-highlight), 0.25);
 	border-radius: 5px;
@@ -74,8 +110,8 @@
 	}
 	
 	> .soda-droplist {
+		@extend .soda-button-list;
 		display: none;
-		flex-direction: column;
 		left: 50%;
 		position: absolute;
 		top: 100%;
@@ -83,21 +119,7 @@
 		width: max-content;
 
 		> * {
-			@extend .soda-button;
-			border-radius: 0px;
 			position: relative;
-
-			&:first-child {
-				border-radius: 5px 5px 0px 0px;
-			}
-
-			&:last-child {
-				border-radius: 0px 0px 5px 5px;
-			}
-
-			&:only-child {
-				border-radius: 5px;
-			}
 
 			.soda-droplist {
 				left: 100%;

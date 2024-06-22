@@ -1,4 +1,6 @@
 v1.0.5 |
+- Soda / Cherry.css
+	- Added button-cluster and button-list
 - Soda / Vanilla.css
 	- Added b, hr, and i default styling
 	- Swapped scrollbar gutter colors
