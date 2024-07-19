@@ -41,7 +41,7 @@ $colors: (
 	}
 
 	// Defines base variant
-	--sd-#{$name}: $color;
+	--sd-#{$name}: #{$color};
 
 	// Defines darkened variants
 	@if $darken != 0 {
