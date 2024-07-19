@@ -27,7 +27,7 @@ Option 2: Download from releases.
 
 ### Enabling soda.css templates
 
-Use `--sd-light` or `--sd-dark` attribute on your `html` tag like so:
+Use the `--sd-light` or `--sd-dark` attribute on your `html` tag like so:
 
 ```html
 <!DOCTYPE html>
