@@ -36,7 +36,7 @@ Use the `--sd-light` or `--sd-dark` attribute on your `html` tag like so:
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
-		<link rel="stylesheet" href="out/soda.css">
+		<link rel="stylesheet" href="soda.css">
 	</head>
 	<body>
 		Hello world!
