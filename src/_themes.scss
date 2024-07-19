@@ -1,0 +1,11 @@
+// Defines themes
+$themes: (
+	"light": (
+		"background": var(--sd-white),
+		"foreground": var(--sd-black)
+	),
+	"dark": (
+		"background": var(--sd-black),
+		"foreground": var(--sd-white)
+	)
+);

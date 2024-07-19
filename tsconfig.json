@@ -1,9 +1,0 @@
-{
-	"compilerOptions": {
-		"module": "None",
-		"outDir": "out",
-		"rootDir": "src",
-		"strict": true,
-		"target": "ESNext"
-	}
-}

@@ -1,0 +1,59 @@
+// Imports
+@use "sass:map";
+@use "./colors";
+@use "./themes";
+
+// Defines colors
+:root {
+	@each $color in map.keys(colors.$colors) {
+		$data: map.get(colors.$colors, $color);
+		@include colors.define(
+			$name: map.get($data, "name"),
+			$color: $color,
+			$lighten: map.get($data, "lighten"),
+			$darken: map.get($data, "darken")
+		);
+	}
+}
+
+// Defines reset pattern
+%reset {
+	height: 100vh;
+	width: 100%;
+
+	* {
+		background: none; 
+		border: none;
+		font: normal normal normal 15px / 20px sans-serif;
+		list-style: none;
+		margin: 0px;
+		outline: none;
+		padding: 0px;
+		scrollbar-width: thin;
+		text-decoration: none;
+	}
+
+	body {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+// Applies themes
+@each $theme in map.keys(themes.$themes) {
+	$background: map.get(themes.$themes, $theme, "background");
+	$foreground: map.get(themes.$themes, $theme, "foreground");
+
+	html[--sd-#{$theme}] {
+		@extend %reset;
+
+		* {
+			color: $foreground;
+			scrollbar-color: $background $foreground;
+		}
+		
+		body {
+			background-color: $background;
+		}
+	}		
+}
