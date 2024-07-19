@@ -27,11 +27,11 @@ Option 2: Download from releases.
 
 ### Enabling soda.css templates
 
-Use the `--sd-light` or `--sd-dark` attribute on your `html` tag like so:
+Use the `--sd` attribute on your `html` tag like so:
 
 ```html
 <!DOCTYPE html>
-<html lang="en" --sd-light>
+<html lang="en" --sd>
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,2 +1,7 @@
+v1.0.1 | July 19th, 2024
+- Added b, hr, and i template styling.
+- Limited --sd-forest to d35.
+- Removed themes
+
 v1.0.0 | July 19th, 2024
 - Added basic features

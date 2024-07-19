@@ -21,7 +21,7 @@ $colors: (
 	#efbf8f: ( "name": "sand" ),
 	#efbf4f: ( "name": "peach" ),
 	#bfef8f: ( "name": "mint-green" ),
-	#0f8f4f: ( "name": "forest" ),
+	#0f8f4f: ( "name": "forest", "darken": 7 ),
 	#8fefef: ( "name": "mint-blue" ),
 	#efbfbf: ( "name": "cherry-blossom" ),
 );
@@ -30,7 +30,7 @@ $colors: (
 @mixin define($name, $color, $lighten, $darken) {
 	// Defines default values
 	@if $lighten == null { $lighten: 3; }
-	@if $darken == null { $darken: 10 }
+	@if $darken == null { $darken: 10; }
 
 	// Defines lightened variants
 	@if $lighten != 0 {
@@ -41,7 +41,7 @@ $colors: (
 	}
 
 	// Defines base variant
-	--sd-#{$name}: #{$color};
+	--sd-#{$name}: $color;
 
 	// Defines darkened variants
 	@if $darken != 0 {

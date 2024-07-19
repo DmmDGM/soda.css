@@ -1,7 +1,6 @@
 // Imports
 @use "sass:map";
 @use "./colors";
-@use "./themes";
 
 // Defines colors
 :root {
@@ -17,13 +16,15 @@
 }
 
 // Defines reset pattern
-%reset {
+html[--sd] {
 	height: 100vh;
 	width: 100%;
 
 	* {
 		background: none; 
 		border: none;
+		color: var(--sd-black);
+		scrollbar-color: var(--sd-white) var(--sd-black);
 		font: normal normal normal 15px / 20px sans-serif;
 		list-style: none;
 		margin: 0px;
@@ -34,26 +35,20 @@
 	}
 
 	body {
+		background-color: var(--sd-white);
 		height: 100%;
 		width: 100%;
 	}
-}
 
-// Applies themes
-@each $theme in map.keys(themes.$themes) {
-	$background: map.get(themes.$themes, $theme, "background");
-	$foreground: map.get(themes.$themes, $theme, "foreground");
+	b {
+		font-weight: bold;
+	}
 
-	html[--sd-#{$theme}] {
-		@extend %reset;
+	hr {
+		border: 1px solid var(--sd-black);
+	}
 
-		* {
-			color: $foreground;
-			scrollbar-color: $background $foreground;
-		}
-		
-		body {
-			background-color: $background;
-		}
-	}		
+	i {
+		font-style: italic;
+	}
 }
