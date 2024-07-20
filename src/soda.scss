@@ -1,17 +1,62 @@
 // Imports
 @use "sass:map";
-@use "./colors";
 
-// Defines colors
+// Defines palette
 :root {
-	@each $color in map.keys(colors.$colors) {
-		$data: map.get(colors.$colors, $color);
-		@include colors.define(
-			$name: map.get($data, "name"),
-			$color: $color,
-			$lighten: map.get($data, "lighten"),
-			$darken: map.get($data, "darken")
-		);
+	// Defines all colors
+	$colors: (
+		// Polychrome
+		#ef4f4f: ( "name": "red" ),
+		#ef8f4f: ( "name": "orange" ),
+		#efef4f: ( "name": "yellow" ),
+		#4fef4f: ( "name": "green" ),
+		#4fefef: ( "name": "cyan" ),
+		#4fbfef: ( "name": "sky" ),
+		#4f4fef: ( "name": "blue" ),
+		#8f4f8f: ( "name": "purple", "darken": 7 ),
+		#ef0fbf: ( "name": "magenta", "darken": 7 ),
+		#ef8fbf: ( "name": "pink" ),
+
+		// Monochrome
+		#efefef: ( "name": "white", "lighten": 2, "darken": 3 ),
+		#8f8f8f: ( "name": "gray", "lighten": 2, "darken": 3 ),
+		#1f1f1f: ( "name": "black", "lighten": 2, "darken": 3 ),
+
+		// Miscellaneous
+		#efbf8f: ( "name": "sand" ),
+		#efbf4f: ( "name": "peach" ),
+		#bfef8f: ( "name": "mint-green" ),
+		#0f8f4f: ( "name": "forest", "darken": 5 ),
+		#8fefef: ( "name": "mint-blue" ),
+		#efbfbf: ( "name": "cherry-blossom" )
+	);
+
+	// Defines each color
+	@each $color in map.keys($colors) {
+		// Fetches data
+		$data: map.get($colors, $color);
+		$name: map.get($data, "name");
+		$lighten: if(map.has-key($data, "lighten"), map.get($data, "lighten"), 3);
+		$darken: if(map.has-key($data, "darken"), map.get($data, "darken"), 10);
+
+		// Defines lightened variants
+		@if $lighten != 0 {
+			@for $i from $lighten through 1 {
+				--sd-#{$name}-l#{$i * 5}: #{lighten($color, $i * 5%)};
+			}
+			--sd-light-#{$name}: #{lighten($color, 10%)};
+		}
+
+		// Defines base variant
+		--sd-#{$name}: #{$color};
+
+		// Defines darkened variants
+		@if $darken != 0 {
+			--sd-dark-#{$name}: #{darken($color, 20%)};
+			@for $i from 1 through $darken {
+				--sd-#{$name}-d#{$i * 5}: #{darken($color, $i * 5%)};
+			}
+		}
 	}
 }
 
