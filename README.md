@@ -1,6 +1,6 @@
 # Soda.css
 
-Soda.css - "I don't have a catchy slogan."
+Soda.css - "Go fizz."
 
 ## About
 
