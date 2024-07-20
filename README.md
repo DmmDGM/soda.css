@@ -1,6 +1,6 @@
 # Soda.css
 
-Soda.css - "Go fizz."
+Soda.css - "Go fizz™️"
 
 ## About
 
