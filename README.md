@@ -8,7 +8,11 @@ Soda.css is a small CSS project that offers clean default styling templates and 
 
 If your project requires more complicated features, such as dynamic interactions or component stylings, perhaps you can try out other libraries, for example, [Bootstrap](https://getbootstrap.com/) or [Tailwind CSS](https://tailwindcss.com/).
 
-Let me know if you have any questions or requests on Discord: @therock2t.
+The project is open source and is protected under the [MIT license](https://opensource.org/license/mit). See license in [`Soda.css/LICENSE`](./LICENSE).
+
+All changes can be found in [`Soda.css/CHANGELOG`](./CHANGELOG).
+
+Let me know if you have any questions or requests on Discord: `@therock2t`.
 
 ## Download
 
@@ -50,6 +54,10 @@ button:focus-visible, button:hover {
 	background-color: var(--sd-red);
 }
 ```
+
+> [!WARNING]
+> Requires the use of relative CSS, which might not be supported on older browsers.
+> Check [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#browser_compatibility) here.
 
 ### Applying Different Shades of Soda.css Colors
 
@@ -109,10 +117,6 @@ button:focus-visible, button:hover {
 	background-color: var(--sd-light-red);
 }
 ```
-
-> [!WARNING]
-> Requires the use of relative CSS, which might not be supported on older browsers.
-> Check [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#browser_compatibility) here.
 
 ### Disabling Soda.css's Default Styling
 
