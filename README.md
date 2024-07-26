@@ -1,6 +1,6 @@
 # Soda.css
 
-Soda.css - "Go fizz"
+Soda.css - "Go fizz™"
 
 ## About
 
@@ -27,9 +27,31 @@ sass --no-source-map --style=compressed src:out
 
 Visit https://github.com/DmmDGM/soda.css/releases and install the latest version.
 
-## Guide
+## Documentation and Guides
 
-### Applying different shades of colors
+### Adding Alpha Values to Soda.css Colors
+
+It is possible to apply an alpha channel to any pre-defined hex color by using the [relative rgb](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#relative_value_syntax) syntax:
+
+```css
+rgb(from [color] r g b / [alpha])
+```
+
+```css
+button {
+	background-color: rgb(from var(--sd-red) r g b / 0.5);
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 5px 10px;
+	transition: background 0.2s ease;
+}
+
+button:focus-visible, button:hover {
+	background-color: var(--sd-red);
+}
+```
+
+### Applying Different Shades of Soda.css Colors
 
 Soda.css offers a wide variety of colors and shades. All colors begin with the prefix `--sd`:
 
@@ -88,49 +110,57 @@ button:focus-visible, button:hover {
 }
 ```
 
-### Applying an alpha channel to soda.css colors
-
 > [!WARNING]
 > Requires the use of relative CSS, which might not be supported on older browsers.
 > Check [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#browser_compatibility) here.
 
-It is possible to apply an alpha channel to any pre-defined hex color using the [relative rgb](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#relative_value_syntax) syntax:
+### Disabling Soda.css's Default Styling
+
+By default, Soda.css will automatically style the entire document to provide a clean starting template for your project. If this is an unwanted behavior, use the following CSS after the initialization of Soda.css to revert the changes:
 
 ```css
-rgb(from [color] r g b / [alpha])
-```
-
-```css
-button {
-	background-color: rgb(from var(--sd-red) r g b / 0.5);
-	border-radius: 5px;
-	cursor: pointer;
-	padding: 5px 10px;
-	transition: background 0.2s ease;
+* {
+	background: initial;
+	border: initial;
+	color: initial;
+	font: initial;
+	height: initial;
+	margin: initial;
+	outline: initial;
+	padding: initial;
+	scrollbar-color: initial;
+	scrollbar-width: initial;
+	text-decoration: initial;
+	width: initial;
 }
-
-button:focus-visible, button:hover {
-	background-color: var(--sd-red);
-}
 ```
 
-### Applying soda.css templates
+Alternatively, you can simply delete the relevant styles in your compiled Soda.css.
 
-Use the `--sd` attribute on your `html` tag like so:
+### Full List of Soda.css Colors
 
-```html
-<!DOCTYPE html>
-<html lang="en" --sd>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
-		<link rel="stylesheet" href="soda.css">
-	</head>
-	<body>
-		Hello world!
-	</body>
-</html>
-```
+Below is the full list of available Soda.css color:
 
-###### Last Updated: July 20th, 2024
+Color Name | Base Color Hex | CSS Variable | Brightness Range
+-|-|-|-
+![Color](https://singlecolorimage.com/get/ef4f4f/10x10) Red | #ef4f4f | `--sd-red` | d50 - l15
+![Color](https://singlecolorimage.com/get/ef8f4f/10x10) Orange | #ef8f4f | `--sd-orange` | d50 - l15
+![Color](https://singlecolorimage.com/get/efef4f/10x10) Yellow | #efef4f | `--sd-yellow` | d50 - l15
+![Color](https://singlecolorimage.com/get/4fef4f/10x10) Green | #4fef4f | `--sd-green` | d50 - l15
+![Color](https://singlecolorimage.com/get/4fefef/10x10) Cyan | #4fefef | `--sd-cyan` | d50 - l15
+![Color](https://singlecolorimage.com/get/4fbfef/10x10) Sky | #4fbfef | `--sd-sky` | d50 - l15
+![Color](https://singlecolorimage.com/get/4f4fef/10x10) Blue | #4f4fef | `--sd-blue` | d50 - l15
+![Color](https://singlecolorimage.com/get/8f4f8f/10x10) Purple | #8f4f8f | `--sd-purple` | d35 - l15
+![Color](https://singlecolorimage.com/get/ef0fbf/10x10) Magenta | #ef0fbf | `--sd-magenta` | d35 - l15
+![Color](https://singlecolorimage.com/get/ef8fbf/10x10) Pink | #ef8fbf | `--sd-pink` | d50 - l15
+![Color](https://singlecolorimage.com/get/efefef/10x10) White | #efefef | `--sd-white` | d15 - l10
+![Color](https://singlecolorimage.com/get/8f8f8f/10x10) Gray | #8f8f8f | `--sd-gray` | d15 - l10
+![Color](https://singlecolorimage.com/get/1f1f1f/10x10) Black | #1f1f1f | `--sd-black` | d15 - l10
+![Color](https://singlecolorimage.com/get/efbf8f/10x10) Sand | #efbf8f | `--sd-sand` | d50 - l15
+![Color](https://singlecolorimage.com/get/efbf4f/10x10) Peach | #efbf4f | `--sd-peach` | d50 - l15
+![Color](https://singlecolorimage.com/get/bfef8f/10x10) Mint Green | #bfef8f | `--sd-mint-green` | d50 - l15
+![Color](https://singlecolorimage.com/get/0f8f4f/10x10) Forest | #0f8f4f | `--sd-forest` | d25 - l15
+![Color](https://singlecolorimage.com/get/8fefef/10x10) Mint Blue | #8fefef | `--sd-mint-blue` | d50 - l15
+![Color](https://singlecolorimage.com/get/efbfbf/10x10) Cherry Blossom | #efbfbf | `--sd-cherry-blossom` | d50 - l15
+
+###### Last Updated: July 26th, 2024

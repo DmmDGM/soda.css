@@ -1,3 +1,7 @@
+v1.0.5 | July 26th, 2024
+- Removed the html[--sd] requirement. Now it will always provide default styling.
+- Updated README.md.
+
 v1.0.4 | July 26th, 2024
 - Changed html height from 100vh to 100%.
 
@@ -10,7 +14,7 @@ v1.0.2 | July 19th, 2024
 v1.0.1 | July 19th, 2024
 - Added b, hr, and i template styling.
 - Limited --sd-forest to d35.
-- Removed themes
+- Removed themes.
 
 v1.0.0 | July 19th, 2024
-- Added basic features
+- Added basic features.
