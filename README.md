@@ -144,7 +144,7 @@ Alternatively, you can simply delete the relevant styles in your compiled Soda.c
 
 ### Full List of Soda.css Colors
 
-Below is the full list of available Soda.css color:
+Below is the full list of available Soda.css colors:
 
 Color Name | Base Color Hex | CSS Variable | Brightness Range
 -|-|-|-
