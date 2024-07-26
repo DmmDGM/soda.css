@@ -1,3 +1,6 @@
+v1.0.4 | July 26th, 2024
+- Changed html height from 100vh to 100%.
+
 v1.0.3 | July 20th, 2024
 - Merge all into one file.
 
