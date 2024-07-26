@@ -99,8 +99,9 @@ button:focus-visible, button:hover {
 > [!NOTE]
 > Some colors have different limits to how light or dark they can be.
 > For example, `red` has an upper limit of `l15` and a lower limit of `d50`, while `gray` has an upper limit of `l10` and a lower limit of `d15`.
+> See [Full List of Soda.css Colors](#full-list-of-sodacss-colors) for more information.
 
-Additionally, all colors have a `light-` and `dark-` aliases, which corresponds to the `-l10` and `-d20` options respectively.
+Additionally, all colors have a `light-` and `dark-` aliases, which correspond to the `-l10` and `-d20` options respectively.
 
 ```css
 /* ... */
