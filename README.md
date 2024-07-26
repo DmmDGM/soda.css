@@ -57,7 +57,7 @@ button:focus-visible, button:hover {
 
 > [!WARNING]
 > Requires the use of relative CSS, which might not be supported on older browsers.
-> Check [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#browser_compatibility) here.
+> Check [browser compatibility](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#browser_compatibility) for more information.
 
 ### Applying Different Shades of Soda.css Colors
 
@@ -73,7 +73,7 @@ button {
 }
 ```
 
-Use the `-l[number]` and `-d[number]` suffix to make the color lighter or darker:
+Use the `*-l[number]` and `*-d[number]` suffix to make the color lighter or darker:
 
 ```css
 a {
@@ -98,10 +98,10 @@ button:focus-visible, button:hover {
 
 > [!NOTE]
 > Some colors have different limits to how light or dark they can be.
-> For example, `red` has an upper limit of `l15` and a lower limit of `d50`, while `gray` has an upper limit of `l10` and a lower limit of `d15`.
+> For example, `red` has an upper limit of `*-l15` and a lower limit of `*-d50`, while `gray` has an upper limit of `*-l10` and a lower limit of `*-d15`.
 > See [Full List of Soda.css Colors](#full-list-of-sodacss-colors) for more information.
 
-Additionally, all colors have a `light-` and `dark-` aliases, which correspond to the `-l10` and `-d20` options respectively.
+Additionally, all colors have a `light-*` and a `dark-*` alias, which correspond to the `-l10` and `-d20` shades respectively.
 
 ```css
 /* ... */
@@ -167,5 +167,8 @@ Color Name | Base Color Hex | CSS Variable | Brightness Range
 ![Color](https://singlecolorimage.com/get/0f8f4f/10x10) Forest | #0f8f4f | `--sd-forest` | d25 - l15
 ![Color](https://singlecolorimage.com/get/8fefef/10x10) Mint Blue | #8fefef | `--sd-mint-blue` | d50 - l15
 ![Color](https://singlecolorimage.com/get/efbfbf/10x10) Cherry Blossom | #efbfbf | `--sd-cherry-blossom` | d50 - l15
+
+> [!NOTE]
+> All colors have a `light-*` and a `dark-*` alias, which correspond to the `*-l10` and `*-d20` shades respectively. 
 
 ###### Last Updated: July 26th, 2024
