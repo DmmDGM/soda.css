@@ -1,0 +1,57 @@
+// Imports
+@use "sass:map";
+
+// Defines palette
+$palette: (
+	// Polychrome
+	( "hex": #ef4f4f, "name": "red" )
+	( "hex": #ef8f4f, "name": "orange" )
+	( "hex": #efef4f, "name": "yellow" )
+	( "hex": #4fef4f, "name": "green" )
+	( "hex": #4fefef, "name": "cyan" )
+	( "hex": #4fbfef, "name": "sky" )
+	( "hex": #4f4fef, "name": "blue" )
+	( "hex": #8f4f8f, "name": "purple", "darken": 7 )
+	( "hex": #ef0fbf, "name": "magenta", "darken": 7 )
+	( "hex": #ef8fbf, "name": "pink" )
+
+	// Monochrome
+	( "hex": #efefef, "name": "white", "lighten": 2, "darken": 3 )
+	( "hex": #8f8f8f, "name": "gray", "lighten": 2, "darken": 3 )
+	( "hex": #1f1f1f, "name": "black", "lighten": 2, "darken": 3 )
+
+	// Miscellaneous
+	( "hex": #efbf8f, "name": "sand" )
+	( "hex": #efbf4f, "name": "peach" )
+	( "hex": #bfef8f, "name": "mint-green" )
+	( "hex": #0f8f4f, "name": "forest", "darken": 5 )
+	( "hex": #8fefef, "name": "mint-blue" )
+	( "hex": #efbfbf, "name": "cherry-blossom" )
+);
+	
+// Defines root
+:root {
+	// Defines color
+	@each $color in $palette {
+		// Fetches data
+		$hex: map.get($color, "hex");
+		$name: map.get($color, "name");
+
+		// Defines lightened variants
+		$lighten: if(map.has-key($color, "lighten"), map.get($color, "lighten"), 3);
+		@for $index from $lighten through 1 {
+			--sd-#{$name}-l#{$index * 5}: #{lighten($hex, $index * 5%)};
+		}
+		--sd-light-#{$name}: #{lighten($hex, 10%)};
+
+		// Defines base variant
+		--sd-#{$name}: #{$hex};
+
+		// Defines darkened variants
+		$darken: if(map.has-key($color, "darken"), map.get($color, "darken"), 10);
+		--sd-dark-#{$name}: #{darken($hex, 20%)};
+		@for $index from 1 through $darken {
+			--sd-#{$name}-d#{$index * 5}: #{darken($hex, $index * 5%)};
+		}
+	}
+}

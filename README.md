@@ -119,7 +119,7 @@ button:focus-visible, button:hover {
 }
 ```
 
-### Disabling Soda.css's Default Styling
+### Disabling Soda.css's Default Styling (Before v1.1.0)
 
 By default, Soda.css will automatically style the entire document to provide a clean starting template for your project. If this is an unwanted behavior, use the following CSS after the initialization of Soda.css to revert the changes:
 
@@ -141,6 +141,9 @@ By default, Soda.css will automatically style the entire document to provide a c
 ```
 
 Alternatively, you can simply delete the relevant styles in your compiled Soda.css.
+
+> [!NOTE]
+> For Soda.css v1.1.0 and above, you can use the Sodalite.css option.
 
 ### Full List of Soda.css Colors
 
@@ -171,4 +174,4 @@ Color Name | Base Color Hex | CSS Variable | Brightness Range
 > [!NOTE]
 > All colors have a `light-*` and a `dark-*` alias, which correspond to the `*-l10` and `*-d20` shades respectively. 
 
-###### Last Updated: July 26th, 2024
+###### Last Updated: August 14th, 2024
