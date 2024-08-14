@@ -145,7 +145,7 @@ Alternatively, you can simply delete the relevant styles in your compiled Soda.c
 > [!NOTE]
 > For Soda.css v1.1.0 and above, you can use the Sodalite.css option.
 
-### Disabling Features in Soda.css
+### Disabling Certain Features in Soda.css
 
 Soda.css does not use a module-based system. Therefore, there are no official way to disable certain features in Soda.css. However, you can disable them manually by deleting the corresponding code or overwriting them in the compiled code.
 
