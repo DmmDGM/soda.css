@@ -145,6 +145,12 @@ Alternatively, you can simply delete the relevant styles in your compiled Soda.c
 > [!NOTE]
 > For Soda.css v1.1.0 and above, you can use the Sodalite.css option.
 
+### Disabling Features in Soda.css
+
+There are no official builds that only include specific features in Soda.css. However, you can disable them by deleting the corresponding code in the compiled code or overwriting them.
+
+Alternatively, if you only use Soda.css for the colors, you can try out Sodalite.css.
+
 ### Full List of Soda.css Colors
 
 Below is the full list of available Soda.css colors:
