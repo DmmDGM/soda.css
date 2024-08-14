@@ -119,6 +119,12 @@ button:focus-visible, button:hover {
 }
 ```
 
+### Disabling Certain Features in Soda.css
+
+Soda.css does not use a module-based system. Therefore, there are no official way to disable certain features in Soda.css. However, you can disable them manually by deleting the corresponding code or overwriting them in the compiled code.
+
+Alternatively, if you only use Soda.css for the custom colors, you can try out Sodalite.css.
+
 ### Disabling Soda.css's Default Styling (Before v1.1.0)
 
 By default, Soda.css will automatically style the entire document to provide a clean starting template for your project. If this is an unwanted behavior, use the following CSS after the initialization of Soda.css to revert the changes:
@@ -144,12 +150,6 @@ Alternatively, you can simply delete the relevant styles in your compiled Soda.c
 
 > [!NOTE]
 > For Soda.css v1.1.0 and above, you can use the Sodalite.css option.
-
-### Disabling Certain Features in Soda.css
-
-Soda.css does not use a module-based system. Therefore, there are no official way to disable certain features in Soda.css. However, you can disable them manually by deleting the corresponding code or overwriting them in the compiled code.
-
-Alternatively, if you only use Soda.css for the custom colors, you can try out Sodalite.css.
 
 ### Full List of Soda.css Colors
 
